@@ -1,0 +1,7 @@
+sounddevice
+soundfile
+requests
+pyttsx3
+pandas
+python-dotenv
+speechrecognition
