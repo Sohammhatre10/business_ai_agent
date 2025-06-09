@@ -24,8 +24,8 @@ This project implements an AI-powered customer feedback agent that can process c
 1.  **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/ai-customer-feedback-agent.git
-    cd ai-customer-feedback-agent
+    git clone https://github.com/your-username/business_ai_agent.git
+    cd business_ai_agent
     ```
 
 2.  **Install dependencies:**
@@ -55,7 +55,7 @@ The agent can be run in two modes: `record` (for audio input) or `query` (for te
 ### Running the Agent
 
 ```bash
-python src/main.py --mode [record|query]
+python -m src.main --mode [record|query]
 ```
 
 Replace `[record|query]` with your desired mode.
@@ -66,7 +66,7 @@ In this mode, the agent will automatically start recording audio from your micro
 
 - **To run in record mode:**
   ```bash
-  python src/main.py --mode record
+  python -m src.main --mode record
   ```
 - **To stop the agent:** Press `Ctrl+C` (or `Cmd+C` on macOS) at any time.
 
@@ -76,7 +76,7 @@ In this mode, the agent will prompt you to enter text queries. It will then anal
 
 - **To run in query mode:**
   ```bash
-  python src/main.py --mode query
+  python -m src.main --mode query
   ```
 - **To stop the agent:** Type `exit` or `quit` when prompted for input and press Enter.
 
@@ -84,14 +84,14 @@ In this mode, the agent will prompt you to enter text queries. It will then anal
 
 **Record Mode:**
 
-1.  Run `python src/main.py --mode record`
+1.  Run `python -m src.main --mode record`
 2.  Speak your feedback (e.g., "The customer service was excellent, but I wish you had more phones under 500 dollars.").
 3.  The agent will transcribe your speech, analyze it, and speak its response.
 4.  It will then wait for your next recording. Press `Ctrl+C` to end.
 
 **Query Mode:**
 
-1.  Run `python src/main.py --mode query`
+1.  Run `python -m src.main --mode query`
 2.  You will see `Please enter your query: `
 3.  Type your feedback (e.g., "I need a new phone, can you list some options around 800 dollars with at least 256GB storage?").
 4.  The agent will analyze your text and speak its response (potentially using the `search_mobiles` tool).
